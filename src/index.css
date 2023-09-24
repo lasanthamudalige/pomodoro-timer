@@ -1,0 +1,4 @@
+/* Add '!important' to override bootstrap colors to the body section */
+body {
+  background-color: #f1faee !important; 
+}
