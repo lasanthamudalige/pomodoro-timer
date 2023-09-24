@@ -1,4 +1,4 @@
-/* Add '!important' to override bootstrap colors to the body section */
-body {
-  background-color: #f1faee !important; 
+/* Add below color to the whole html page */
+html {
+  background-color: #f1faee !important;
 }

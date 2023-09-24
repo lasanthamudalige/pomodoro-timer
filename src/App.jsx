@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-// import 'bulma/css/bulma.css'
+import 'bulma/css/bulma.css'
 import './App.css'
 
 
@@ -53,14 +53,14 @@ function App() {
   let seconds = (timeLeft % 60).toLocaleString(undefined, { minimumIntegerDigits: 2 });
 
   return (
-    <div className='container text-center pt-4'>
-      <h1 className='display-3 px-5 text-danger fw-semibold'>TomatoTimer</h1>
-      <p className='fs-1 pt-5 fw-medium'>Time left</p>
-      <p className='fs-2 pb-3 fw-medium'>{minutes} : {seconds}</p>
-      <div className='text-center'>
-        <button className={`btn ${timerStatus ? 'btn-outline-danger' : 'btn-outline-success'}`} onClick={timerStatus ? stopTimer : startTimer}>{timerStatus ? 'Pause' : 'Start'}</button>
+    <div className='container has-text-centered pt-4'>
+      <h1 className='is-size-1 py-4 has-text-danger has-text-weight-semibold'>TomatoTimer</h1>
+      <p className='is-size-3 pt-5 pb-2 has-text-weight-medium'>Time left</p>
+      <p className='is-size-3 pb-5 has-text-weight-medium'>{minutes} : {seconds}</p>
+      <div className='has-text-centered'>
+        <button className={`button ${timerStatus ? 'is-danger' : 'is-success'}`} onClick={timerStatus ? stopTimer : startTimer}>{timerStatus ? 'Pause' : 'Start'}</button>
       </div>
-      <p className={`pt-5 fs-2 fw-medium ${onBreak ? 'breakQuote' : 'workQuote'} `}>{timerStatus ? breakQuote : ''}</p>
+      <p className={`pt-5 is-size-4 has-text-weight-medium ${onBreak ? 'breakQuote' : 'workQuote'} `}>{timerStatus ? breakQuote : ''}</p>
     </div>
   )
 }
