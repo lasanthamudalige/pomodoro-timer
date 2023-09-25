@@ -1,6 +1,6 @@
 # Tomatotimer
 
-A To-Do list program using [Reactjs](https://react.dev/)
+A pomodoro timer program using [Reactjs](https://react.dev/)
 
 ## Table of contents
 * [General info](#general-info)
