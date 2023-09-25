@@ -60,7 +60,7 @@ function App() {
       <div className='has-text-centered'>
         <button className={`button ${timerStatus ? 'is-danger' : 'is-success'}`} onClick={timerStatus ? stopTimer : startTimer}>{timerStatus ? 'Pause' : 'Start'}</button>
       </div>
-      <p className={`pt-5 is-size-4 has-text-weight-medium ${onBreak ? 'breakQuote' : 'workQuote'} `}>{timerStatus ? breakQuote : ''}</p>
+      <p className={`pt-5 is-size-4 has-text-weight-medium ${onBreak ? 'breakQuote' : 'workQuote'} `}>{timerStatus ? breakQuote : 'Ready to work?'}</p>
     </div>
   )
 }
