@@ -1,4 +1,4 @@
-# Tomatotimer
+# TomatoTimer
 
 A pomodoro timer program using [Reactjs](https://react.dev/)
 
